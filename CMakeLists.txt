@@ -101,7 +101,7 @@ add_subdirectory(patchclient)
 add_subdirectory(StatServer)
 add_subdirectory(QueryStatServer)
 add_subdirectory(QueryPropertyServer)
-add_subdirectory(AuthServer)
+# add_subdirectory(AuthServer)
 ############################################################################################
 # 打包deploy, 用于部署
 
@@ -133,7 +133,7 @@ list(APPEND DEPENDS_LIST tarsproperty)
 list(APPEND DEPENDS_LIST tarslog)
 list(APPEND DEPENDS_LIST tarsquerystat)
 list(APPEND DEPENDS_LIST tarsqueryproperty)
-list(APPEND DEPENDS_LIST tarsauth)
+# list(APPEND DEPENDS_LIST tarsauth)
 
 foreach (MODULE ${DEPENDS_LIST})
 
